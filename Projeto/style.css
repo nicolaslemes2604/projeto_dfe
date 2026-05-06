@@ -1,0 +1,222 @@
+/*
+.color1 { #f2f2f2 };branco
+.color2 { #348e91 }; verde-azulado escuro
+.color3 { #1c5052 };
+.color4 { #213635 };
+.color5 { #0a0c0d }; preto
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body{
+    display: flex;
+    font-family: "Share Tech Mono",monospace;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f2f2f2;
+}
+
+nav{
+    display: flex;
+    z-index: 2;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+nav a{
+    padding: 20pt;
+    flex: 1;
+    text-decoration: none;
+}
+
+nav a:visited{
+    color: #0a0c0d;
+}
+nav a:active{
+    color: #348e91;
+}
+
+nav a:hover{
+    transform: scale(1.2);
+    background-color: #0a0c0d;
+    color: #f2f2f2;
+    transition: ease 0.2s background-color;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    background-color: #f2f2f2;
+    flex: 1;
+    gap: 20pt;
+    width: 100%;
+    align-self: center;
+}
+
+table a:active{
+    color: yellow;
+}
+
+table{
+    border: 2px solid #213635;
+    margin: 0pt 10pt;
+    border-collapse: collapse;
+    background-color: #f2f2f2;
+    margin-bottom: 10pt;
+    align-self: center;
+    width: 70%;
+    
+}
+
+th{
+    font-size: 20pt;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10pt;
+    background-color: #348e91;
+    text-align: center;
+
+}
+
+thead{
+    font-size: 12pt;
+}   
+
+thead td{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    padding: 10pt;
+    border-bottom: 1px dashed #0a0c0d;
+    border-color: #0a0c0d;
+    
+}
+
+td button{
+    padding: 10pt;
+    width: 100%;
+    border-radius: 10px;
+}
+
+td button:hover{
+    cursor: pointer;
+    background-color: #213635;
+    color: #f2f2f2;
+    transition: ease-in 0.1s color;
+    transition: ease-in 0.1s background-color;
+}
+
+tbody tr:nth-child(odd){
+    margin: 0;
+    background-color:rgba(123, 123, 123, 0.1);
+}
+tbody td{
+    padding: 10pt;
+}
+
+table img{
+    height: 50pt;
+}
+
+tfoot td{
+    padding: 10pt;
+}
+
+#tfoot_link{
+    text-decoration: none;
+    font-weight: 700;
+    color: #348e91;
+}
+
+#tfoot_link:hover{
+    text-decoration: underline;
+}
+
+
+.hero_section{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    color: #f2f2f2;
+    width: auto;
+}
+
+.hero_section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(https://i.pinimg.com/originals/13/96/ed/1396ed77fdd5296495cccd2b9c8d29e9.gif);
+    background-size: cover;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+.title{
+    font-family: "Bitcount Single", system-ui;
+}
+
+.hero_section h1{
+    font-size: 40pt;
+    margin-bottom: 0;
+    padding-top: 40pt;
+}
+.hero_section p{
+    margin-bottom: 40pt;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #0a0c0d;
+    flex: 0.5;
+    color: #f2f2f2;
+    padding: 0px 40px;
+}
+
+.links ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.links  li:first-child{
+    color: gray;
+    font-size: 15pt;
+    font-weight: 800;
+    padding: 15pt 0;
+}
+
+.links li:nth-child(n+2){
+    padding-bottom: 10pt;
+}
+.links ul li:nth-child(n+2):hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.links ol li{
+    cursor:auto;
+}
+.footer_header{
+    text-align: center;
+    border-bottom: 1px solid #213635;
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.footer_header h2{
+    font-size: 20pt;
+}
+
+.links ol{
+    padding: 0;
+}
+.links ol li:first-child{
+    list-style: none;
+    
+}
+
